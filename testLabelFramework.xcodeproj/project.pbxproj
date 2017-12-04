@@ -15,6 +15,8 @@
 		6B2423731FD4DDE6004934F1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B2423721FD4DDE6004934F1 /* main.m */; };
 		6B24237D1FD4DDE7004934F1 /* testLabelFrameworkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B24237C1FD4DDE7004934F1 /* testLabelFrameworkTests.m */; };
 		6B2423881FD4DDE7004934F1 /* testLabelFrameworkUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B2423871FD4DDE7004934F1 /* testLabelFrameworkUITests.m */; };
+		6B24239C1FD4E085004934F1 /* TestString.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B24239B1FD4E085004934F1 /* TestString.m */; };
+		6B24239D1FD4E085004934F1 /* TestString.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B24239B1FD4E085004934F1 /* TestString.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		6B2423831FD4DDE7004934F1 /* testLabelFrameworkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testLabelFrameworkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B2423871FD4DDE7004934F1 /* testLabelFrameworkUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testLabelFrameworkUITests.m; sourceTree = "<group>"; };
 		6B2423891FD4DDE7004934F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B24239A1FD4E085004934F1 /* TestString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestString.h; sourceTree = "<group>"; };
+		6B24239B1FD4E085004934F1 /* TestString.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestString.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,7 @@
 		6B2423621FD4DDE6004934F1 /* testLabelFramework */ = {
 			isa = PBXGroup;
 			children = (
+				6B2423951FD4DFA3004934F1 /* testFramework */,
 				6B2423631FD4DDE6004934F1 /* AppDelegate.h */,
 				6B2423641FD4DDE6004934F1 /* AppDelegate.m */,
 				6B2423661FD4DDE6004934F1 /* ViewController.h */,
@@ -130,6 +135,15 @@
 				6B2423891FD4DDE7004934F1 /* Info.plist */,
 			);
 			path = testLabelFrameworkUITests;
+			sourceTree = "<group>";
+		};
+		6B2423951FD4DFA3004934F1 /* testFramework */ = {
+			isa = PBXGroup;
+			children = (
+				6B24239A1FD4E085004934F1 /* TestString.h */,
+				6B24239B1FD4E085004934F1 /* TestString.m */,
+			);
+			path = testFramework;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,6 +281,7 @@
 			files = (
 				6B2423681FD4DDE6004934F1 /* ViewController.m in Sources */,
 				6B2423731FD4DDE6004934F1 /* main.m in Sources */,
+				6B24239C1FD4E085004934F1 /* TestString.m in Sources */,
 				6B2423651FD4DDE6004934F1 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,6 +298,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B24239D1FD4E085004934F1 /* TestString.m in Sources */,
 				6B2423881FD4DDE7004934F1 /* testLabelFrameworkUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -431,7 +447,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W46QKZERKX;
 				INFOPLIST_FILE = testLabelFramework/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = wangteng.testLabelFramework;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -444,7 +462,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W46QKZERKX;
 				INFOPLIST_FILE = testLabelFramework/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = wangteng.testLabelFramework;
 				PRODUCT_NAME = "$(TARGET_NAME)";
